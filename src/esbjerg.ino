@@ -61,12 +61,14 @@ void loop()
 		Serial.println(byte( (!digitalRead(tommel) << 4) & 0b11111),BIN);
 
 		Serial.print("databyte: ");
-		Serial.println(databyte,BIN);
 */
 
-		Serial.write(databyte);
-		Serial.write(13); //CR
-		Serial.write(10); //NL
+		Serial.println(databyte,BIN);
+
+//		RAW DATA FOR SPEED:
+//		Serial.write(databyte);
+//		Serial.write(13); //CR
+//		Serial.write(10); //NL
 
 		change=false;
 	}
